@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import SearchForm from "./SearchForm";
-import { connect } from ".react-redux";
+import { connect } from "react-redux";
 import MoviesContainer from "./MoviesContainer";
+import Spinner from "../layout/Spinner";
 
-export class Landing extends Component() {
+export class Landing extends Component {
   render() {
     const { loading } = this.props;
 

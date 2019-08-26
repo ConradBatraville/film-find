@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -6,12 +7,9 @@ function Navbar() {
       <nav className="navbar navbar-light bg-dark mb-5">
         <div className="container">
           <div className="navbar-header">
-            <a
-              className="navbar-brand text-white text-lg brand-text"
-              href="https://www.google.com/"
-            >
+            <Link className="navbar-brand text-white text-lg brand-text" to="/">
               FilmFind
-            </a>
+            </Link>
           </div>
           <ul className="navbar-nav ml-auto text-light d-inline-block">
             <li className="nav-item d-inline-block mr-4">

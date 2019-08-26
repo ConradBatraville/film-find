@@ -1,4 +1,4 @@
-import { SEARCH_MOVIE, FETCH_MOVIES } from "./types";
+import { SEARCH_MOVIE, FETCH_MOVIES, FETCH_MOVIE, LOADING } from "./types";
 import axios from "axios";
 import { APIKey } from "../APIKey";
 
@@ -19,4 +19,22 @@ export const fetchMovies = text => dispatch => {
       })
     )
     .catch(err => console.log(err));
+};
+
+export const fetchMovie = id => dispatch => {
+  axios
+    .get(`https://www.omdbapi.com/?apikey=${APIKey}&i=${id}`)
+    .then(response =>
+      dispatch({
+        type: FETCH_MOVIE,
+        payload: response.data
+      })
+    )
+    .catch(err => console.log(err));
+};
+
+export const setLoading = () => {
+  return {
+    type: LOADING
+  };
 };
