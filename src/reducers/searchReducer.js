@@ -1,4 +1,4 @@
-import { SEARCH_MOVIE } from "../actions/types";
+import { SEARCH_MOVIE, FETCH_MOVIES } from "../actions/types";
 
 const initialState = {
   text: "",
@@ -14,6 +14,11 @@ export default function(state = initialState, action) {
         ...state,
         text: action.payload,
         loading: false
+      };
+    case FETCH_MOVIES:
+      return {
+        ...state,
+        text: action.payload
       };
     default:
       return state;
