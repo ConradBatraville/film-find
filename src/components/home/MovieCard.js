@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-export default class MovieCard extends Component {
+export class MovieCard extends Component {
   render() {
-    const movie = this.props;
+    const { movie } = this.props;
     return (
       <div className="col-md-3 mb-5">
         <div className="card card-body bg-dark text-center h-100">
@@ -20,3 +20,5 @@ export default class MovieCard extends Component {
     );
   }
 }
+
+export default MovieCard;

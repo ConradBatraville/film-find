@@ -13,10 +13,11 @@ function Navbar() {
           </div>
           <ul className="navbar-nav ml-auto text-light d-inline-block">
             <li className="nav-item d-inline-block mr-4">
-              <i class="fas fa-arrows-alt" />
+              <i class="fas fa-film fa-4x"></i>
+              <i class="fas fa-search fa-4x"></i>
             </li>
             <li className="nav-item d-inline-block mr-4">
-              <i className="fab fa-react fa-5x" id="react-logo" />
+              {/* <i className="fab fa-react fa-5x" id="react-logo" /> */}
             </li>
           </ul>
         </div>

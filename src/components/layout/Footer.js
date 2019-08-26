@@ -13,6 +13,9 @@ function Footer() {
             >
               Conrad Batraville
             </a>
+            <a href="https://www.linkedin.com/in/conradbatraville/">
+              <i className="fab fa-linkedin fa-1x" id="react-logo" />
+            </a>
           </div>
         </div>
       </div>
