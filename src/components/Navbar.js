@@ -6,9 +6,12 @@ function Navbar() {
       <nav className="navbar navbar-light bg-dark mb-5">
         <div className="container">
           <div className="navbar-header">
-            {/* <Link className="navbar-brand text-white text-lg brand-text" to="">
-              MovieScanner
-            </Link> */}
+            <a
+              className="navbar-brand text-white text-lg brand-text"
+              href="https://www.google.com/"
+            >
+              FilmFind
+            </a>
           </div>
           <ul className="navbar-nav ml-auto text-light d-inline-block">
             <li className="nav-item d-inline-block mr-4">
